@@ -412,7 +412,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.msm8953-libperfmgr
+    android.hardware.power@1.3-service.msm8953-libperfmgr
 
 # Protobuf
 PRODUCT_PACKAGES += \
