@@ -1,1 +1,3 @@
 dontaudit rild vendor_file:file ioctl;
+
+binder_call(rild, qtidataservices_app)
