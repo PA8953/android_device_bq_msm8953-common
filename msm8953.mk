@@ -415,6 +415,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Platform
+TARGET_BOARD_PLATFORM := msm8953
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.msm8953-libperfmgr
