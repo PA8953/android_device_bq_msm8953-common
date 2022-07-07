@@ -512,6 +512,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
+    system/bt/conf \
+    packages/apps/Bluetooth \
     $(LOCAL_PATH)
 
 # Thermal
