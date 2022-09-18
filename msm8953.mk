@@ -439,13 +439,15 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
     init.qti.fm.sh \
     init.msm.usb.configfs.rc \
     init.target.rc \
     ueventd.qcom.rc \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:$(TARGET_OUT_VENDOR_ETC)/init/hw/init.qcom.usb.rc
 
 # Recovery
 PRODUCT_PACKAGES += \
