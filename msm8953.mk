@@ -148,16 +148,11 @@ PRODUCT_PACKAGES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.msm8953.recovery
+    android.hardware.boot@1.0-impl.recovery
 
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
-    bootctrl.msm8953 \
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+    android.hardware.boot@1.0-service
 
 # Bpf
 PRODUCT_PROPERTY_OVERRIDES += ro.kernel.ebpf.supported=1
@@ -448,10 +443,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:$(TARGET_OUT_VENDOR_ETC)/init/hw/init.qcom.usb.rc
-
-# Recovery
-PRODUCT_PACKAGES += \
-    libgptutils.bq.recovery
 
 # RIL
 PRODUCT_PACKAGES += \
