@@ -394,20 +394,16 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
-
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
 
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.msm8953-libperfmgr
+    android.hardware.power-service-qti \
+    android.hardware.power.stats@1.0-service.mock
 
 # Protobuf
 PRODUCT_PACKAGES += \
