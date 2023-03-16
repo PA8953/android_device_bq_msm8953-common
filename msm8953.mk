@@ -439,9 +439,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 #vendor prop to disable advanced network scanning
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.enableadvancedscan=false
