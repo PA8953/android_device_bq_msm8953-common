@@ -200,7 +200,6 @@ USE_SENSOR_MULTI_HAL := true
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Tap to wake
