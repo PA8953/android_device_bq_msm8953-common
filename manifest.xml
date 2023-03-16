@@ -98,11 +98,6 @@
         <fqname>@2.3::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IPictureAdjustment/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
