@@ -226,6 +226,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
+# Dynamic Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -399,6 +404,7 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.qcom_ramdisk \
     fstab.qcom \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
