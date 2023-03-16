@@ -176,6 +176,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/mct_pipeline.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mct_pipeline.xml
 
+# device/qcom/common modules
+TARGET_USE_QTI_BT_STACK := false
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt
+
 # Disable skip validate
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1
