@@ -400,6 +400,7 @@ PRODUCT_ODM_PROPERTIES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom_ramdisk \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.class_main.sh \
