@@ -5,6 +5,9 @@
 # Charger
 ro.charger.enable_suspend=true
 
+# fastbootd
+ro.fastbootd.available=true
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
